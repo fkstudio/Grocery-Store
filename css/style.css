@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+:root{
+    --red:#dc3545;
+    --orange:#fd7e14;
+    --green:#28a745;
+    --teal:#20c997;
+    --info:#17a2b8;
+    --primary:#ff253a;
+    --background:linear-gradient(135deg, #0cc5b7 0%, #2bd891 100%);
+    --background--btn:linear-gradient(135deg, #ff934b 0%, #ff5e62 100%);
+}
+
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: none;
+    transition: all .3s linear;
+}
+
+::selection{
+    background: var(--teal);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:6.5rem;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-slider-thumb{
+    background: var(--green);
+    border-radius: 5rem;
+}
+
+body{
+    background: #eff7fa;
+    color: #888;
+    
+}
+
+/* ----------------------------- header section ---------------------------- */
+
+.header-1{
+    background: var(--background);
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2rem 7%;
+}
+
+.header-1 .search-box-container{
+    display: flex;
+    width: 50rem;
+    height: 4rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+} 
+
+.header-1 .search-box-container #search-box{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    font-style: italic;
+    background: none;
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.header-1 .search-box-container label{
+    width: 8rem;
+    height: 100%;
+    line-height: 4rem;
+    text-align: center;
+    background: var(--background--btn);
+    color:#fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.header-2{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    height: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position:relative;
+}
+
+.header-2 .navbar a{
+    font-size:  1.5rem;
+    color: #000;
+    padding: 1.5rem;
+    font-weight: normal;
+    margin:  0 .1rem;
+}
+
+.header-2 .navbar a:hover{
+    color: #fff;
+    background: var(--background--btn);
+    transition: .2s linear;
+}
+
+.header-2 .navbar .active{
+    background: var(--background--btn);
+    color: #fff;
+}
+
+.header-2 .icons a{
+   font-size: 1.5rem;
+   color:#888;
+   padding-left: 1rem;
+   font-weight: normal;
+}
+
+.header-2 .icons a i{
+    color: var(--orange);
+    margin-right: .5rem;
+}
+
+.header-2 .icons a:hover{
+    color: var(--red);
+}
+
+.header-2 #menu-bar{
+    font-size: 2rem;
+    border-radius: .5rem;
+    padding:  .8rem 1.5rem;
+    color:#fff;
+    background: var(--orange);
+    cursor:pointer;
+    display: none;
+}
+/* ----------------------------- header section ends ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- media jquery -------------------- */
+
+@media (max-width: 1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+/* -------------------- media for max - 991px -------------------- */
+
+@media (max-width: 991px){
+    .header-1,
+    .header-2{
+        padding: 2rem;
+    }
+
+    .header-2 #menu-bar{
+        display: initial;
+    }
+
+    .header-2 .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem 2rem;
+        display: none;
+    }
+
+    .header-2 .navbar.active{
+        display: initial;
+    }
+ 
+    .header-2 .navbar a{ 
+        font-size: 1.7rem;
+        display: block;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border: .1rem solid #fff8f8;
+        border-left: .5rem solid var(--green);
+    }
+
+}
+
+
+/* -------------------- media for max - 768px -------------------- */
+
+@media (max-width: 768px){
+
+    .header-1 .search-box-container{
+        width: 30 rem;
+    }
+}
+
+/* -------------------- media for max - 450px -------------------- */
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header-1{
+        flex-flow: column;
+    }
+
+    .header-1 .search-box-container{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

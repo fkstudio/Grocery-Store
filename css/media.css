@@ -1,0 +1,38 @@
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* -------------------- media for max - 991px -------------------- */
+
+@media (max-width: 991px){
+    .header-1,
+    .header-2{
+        padding: 2rem;
+    }
+
+    .header-2 #menu-bar{
+        display: initial;
+    }
+
+    .header-2 .navbar{
+        position: absolute;
+        top: 100;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem 2rem;
+    }
+ 
+    .header-1 .navbar a{ 
+        font-size: 1.7rem;
+        display: block;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        border: .1rem solid #fff8f8;
+        border-left: .5rem solid var(--green);
+    }
+}
+
