@@ -32,7 +32,7 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top:6.5rem;
 }
@@ -54,6 +54,10 @@ body{
     background: #eff7fa;
     color: #888;
     
+}
+
+section{
+    padding: 3rem 9%;
 }
 
 /* ----------------------------- header section ---------------------------- */
@@ -155,7 +159,62 @@ body{
 }
 /* ----------------------------- header section ends ---------------------------- */
 
+/* ----------------------------- home section starts ---------------------------- */
+.box-container{
+    display: grid;
+    grid-template-columns: .8fr 2.5fr;
+    gap: 1.5rem;
+}
 
+.box-container .left-col .title{
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--background--btn);
+    text-transform: capitalize;
+}
+
+.box-container .left-col .box{
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.box-container .left-col .box a{
+    padding: .5rem;
+    font-size: 1.3rem; 
+    color: #000;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.box-container .left-col .box a p{
+    margin-left: .8rem;
+}
+
+.box-container .left-col .box a span{
+    margin-left: 13rem;
+    color: #080808;
+    background: rgba(0,0,0,.1);
+    padding: .5rem;
+}
+
+.box-container .left-col .box img{
+    width: 30px;
+}
+
+.box-container .left-col .box a:hover{
+    border-left: .3rem solid var(--green);
+    background: #eff7fa;
+    border-right:  0.1rem solid var(--green);
+}
+
+.box-container .right-col img{
+    width: 100%;
+}
+
+/* ----------------------------- home section ends ---------------------------- */
 
 
 
@@ -212,7 +271,25 @@ body{
         border-left: .5rem solid var(--green);
     }
 
+    section{
+        padding: 2rem;
+    }
+    
+    .box-container{
+        grid-template-columns: .7fr 2fr;
+    }
+
+    .box-container .left-col .box a{
+        justify-content: space-between;
+    }
+
+    .box-container .right-col{
+        margin-top: 2rem;
+    }
+
 }
+
+
 
 
 /* -------------------- media for max - 768px -------------------- */
@@ -220,8 +297,17 @@ body{
 @media (max-width: 768px){
 
     .header-1 .search-box-container{
-        width: 30 rem;
+        width: 30rem;
     }
+
+   .box-container{
+       grid-template-columns: 1fr;
+       gap: 0;
+   }
+
+   .box-container .right-col{
+       margin-top: 2rem;
+   }
 }
 
 /* -------------------- media for max - 450px -------------------- */
