@@ -2,6 +2,7 @@
 
 :root{
     --red:#dc3545;
+    --blue:#0000FF;
     --orange:#fd7e14;
     --green:#28a745;
     --teal:#20c997;
@@ -53,7 +54,6 @@ html::-webkit-slider-thumb{
 body{
     background: #eff7fa;
     color: #888;
-    
 }
 
 section{
@@ -217,6 +217,287 @@ section{
 /* ----------------------------- home section ends ---------------------------- */
 
 
+/* ----------------------------- products section starts ---------------------------- */
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h2{
+    color:#333;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.heading h2 span{
+    margin-left: .5rem;
+    text-transform: uppercase;
+    background: var(--blue);
+    color:#fff;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+}
+
+.heading a{
+    font-size: 1.7rem;
+    color: var(--blue);
+    font-family: sans-serif;
+}
+
+.heading a:hover{
+    color:#000;
+}
+
+.products .box-container{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    flex: 1 1 23rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: .3rem;
+    position: relative;
+    box-shadow:  0 2px 8px; rgba(0 0 0 .6%);
+}
+
+.products .box-container .box:hover img{
+    transform: scale(1.1);
+    transition: .2s linear;
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: rgba(0, 255, .1);
+    color: var(--green);
+    padding: .7rem 1rem;
+    font-size: 1.2rem;
+    z-index: 100%;
+}
+
+.products .box-container .box h3{
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.products .box-container .box p{
+    font-size: 1.3rem;
+    color: #808080;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.products .box-container .box p span{
+    margin-right: .3rem;
+}
+
+.products .box-container .box .price{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.products .box-container .box .price span{
+    font-size: 1.3rem;
+    color: #999;
+    margin-right: .5rem;
+    text-decoration: line-through;
+}
+
+.products .box-container .box .btn{
+    font-size: 1.3rem;
+    padding: .5rem 1.5rem;
+    background: var(--background--btn);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5rem;
+    outline: none;
+    cursor: pointer;
+    border:none;
+}
+
+.products .box-container .box .corner-box{
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: .1rem solid var(--green);
+    z-index: 1000;
+}
+
+.products .box-container .box .corner-box span{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: .6rem;
+    right: .6rem;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+     
+/* ----------------------------- products section ends ---------------------------- */
+
+.banner-1 .box-banner img{
+  display: block;
+  margin: auto;
+}
+
+.banner-1 .box-banner{
+    background-color: #fef7d6;
+}
+.container .box-container{
+    background-image: var('../images/1-2.');
+}
+
+
+.last-products .box-container .box{
+    flex: 1 1 20rem;
+}
+
+
+/* -------------------- Footer section starts -------------------- */
+.footer{
+    background: #fff;
+    margin-top: 3rem;
+}
+
+.footer .wrapper{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+    border-bottom:  .1rem solid  rgba(0,0,0,.1);
+}
+
+.footer .wrapper .feature-box{ 
+    flex: 1 1 30rem; 
+    display: flex;
+    align-items: center;
+}
+
+.footer .wrapper .feature-box i{
+    width: 7rem;
+    height: 7rem;
+    border: .1rem solid var(--blue);
+    text-align: center;
+    line-height: 7rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--blue);
+    margin-left: 1.5rem;
+}
+
+.footer .wrapper .feature-box .content{
+    padding-left: 1rem;
+}
+
+.footer .wrapper .feature-box .content h3{
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+.footer .wrapper .feature-box .content p{
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.footer .box-container{
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer .box-container .box{
+    flex-basis: 1 1 30rem;
+    padding: 0 3rem;
+} 
+
+.footer .box-container .box .icons{
+    margin-top: 2.5rem;
+}
+
+.footer .box-container .box .icons a{
+    display: block;
+    padding: .4rem 0;
+    font-size: 1.3rem;
+    color: #808080;
+}
+
+.footer .box-container .box .icons-1 a:nth-child(3){
+    color: var(--teal);
+    text-transform: none;
+}
+
+.footer .box-container .box .icons-1 a:nth-child(4){
+    color: var(--blue);
+    text-transform: none;
+}
+
+.footer .box-container .box .icons-1 a i{
+    margin-right: .5rem;
+}
+
+.footer .box-container .box h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer .box-container .box .image img{
+    width: 13rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.credit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--teal);
+    padding: 3rem 0;
+    letter-spacing: .1rem;
+}
+
+.credit span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+
+
+
+/* -------------------- Footer section ends -------------------- */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -326,4 +607,13 @@ section{
         width: 100%;
         margin-top: 2rem;
     }
+
+    .footer .box-container .box .icons a{
+        font-size: 1.5rem;
+    }
+
+    .footer .credit span{
+        font-size: 1.5rem;
+    }
+
 }
