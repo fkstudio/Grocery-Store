@@ -265,7 +265,7 @@ section{
     background: #fff;
     border-radius: .3rem;
     position: relative;
-    box-shadow:  0 2px 8px; rgba(0 0 0 .6%);
+    box-shadow:  0 2px 8px; rgba(0, 0, .6);
 }
 
 .products .box-container .box:hover img{
@@ -485,13 +485,185 @@ section{
 }
 
 
-
-
 /* -------------------- Footer section ends -------------------- */
 
 
 
 
+/* ================================== css for about us ================================== */
+
+.about{
+    background: #fff;
+}
+
+.about .heading-1{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    text-transform: uppercase;
+    padding: 7rem 0;
+}
+
+.about .heading-1 span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .box-container .left-col{
+    flex: 1 1 25rem;
+}
+
+.about .box-container .left-col img{
+    width: 90%;
+}
+
+.about .box-container .right-col{
+    flex:  1 1 50rem;
+}
+
+.about .box-container .right-col .heading-2{
+    font-size: 4rem;
+    color: var(--red);
+    margin-bottom: 3.5rem;
+}
+
+.about .box-container .right-col .box{
+    padding: 1.5rem;
+}
+
+.about .box-container .right-col .box h2{
+    color: #333;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+
+.about .box-container .right-col .box p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #808080;
+
+}
+
+
+/* -------------------- Services section starts -------------------- */
+
+.services .content{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.services .content .heading-1{
+    font-size: 3rem;
+    color: #000;
+    padding: .7rem;
+    font-weight: bold;
+}
+
+.services .content .para{
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.services .box-container{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .box-container .box{
+    flex: 1 1 30rem;
+    padding: 2rem 0;
+}
+.services .box-container .box i{
+    font-size: 4rem;
+    color: var(--teal);
+    padding-bottom: 1rem;
+}
+
+.services .box-container .content{
+    padding-top: 2.5rem;
+}
+
+.services .box-container .content-1 h2{
+    font-size: 2rem;
+    color: var(--blue);
+    padding-bottom: 1rem;
+}
+
+.services .box-container .content-1 p{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: #808080;
+    line-height: 2rem;
+}
+/* -------------------- Services section ends -------------------- */
+
+
+
+
+/* -------------------- team section starts -------------------- */
+
+.team{
+    background: #fff;
+}
+
+.team .team-heading{
+    text-align: center;
+    padding: 3rem;
+}
+
+.team .team-heading h2{
+   font-size: 3rem;
+   text-transform: uppercase;
+   color: black;
+}
+
+.team .team-heading p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+    letter-spacing: .1rem;
+}
+
+.team .box-container{
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.team .box-container .box{
+    flex: 1 1 30rem;
+    padding: 2rem;
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.team .box-container .box img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team .box-container .box p{
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    color: #808080;
+}
+
+.team .box-container .box .name h2{
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+/* -------------------- team section ends -------------------- */
 
 
 
@@ -507,7 +679,8 @@ section{
 
 
 
-/* -------------------- media jquery -------------------- */
+
+/* ==================================== media jquery ==================================== */
 
 @media (max-width: 1200px){
 
@@ -588,6 +761,12 @@ section{
 
    .box-container .right-col{
        margin-top: 2rem;
+   }
+
+   .about .box-container .right-col .box,
+   .about .box-container .right-col .heading-2,
+   .about .box-container .box{
+       text-align: center;
    }
 }
 
