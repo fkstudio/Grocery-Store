@@ -60,7 +60,7 @@ section{
     padding: 3rem 9%;
 }
 
-/* ----------------------------- header section ---------------------------- */
+/* ==================================== header section ==================================== */
 
 .header-1{
     background: var(--background);
@@ -157,9 +157,9 @@ section{
     cursor:pointer;
     display: none;
 }
-/* ----------------------------- header section ends ---------------------------- */
+/* ==================================== header section ends ==================================== */
 
-/* ----------------------------- home section starts ---------------------------- */
+/* ==================================== home section starts ==================================== */
 .box-container{
     display: grid;
     grid-template-columns: .8fr 2.5fr;
@@ -214,10 +214,10 @@ section{
     width: 100%;
 }
 
-/* ----------------------------- home section ends ---------------------------- */
+/* ====================================- home section ends ==================================== */
 
 
-/* ----------------------------- products section starts ---------------------------- */
+/* ==================================== products section starts ==================================== */
 
 .heading{
     display: flex;
@@ -265,7 +265,7 @@ section{
     background: #fff;
     border-radius: .3rem;
     position: relative;
-    box-shadow:  0 2px 8px; rgba(0, 0, .6);
+    box-shadow:  0 2px 8px, rgba(0, 0, .6);
 }
 
 .products .box-container .box:hover img{
@@ -349,7 +349,7 @@ section{
 }
 
      
-/* ----------------------------- products section ends ---------------------------- */
+/* ==================================== products section ends ==================================== */
 
 .banner-1 .box-banner img{
   display: block;
@@ -369,7 +369,75 @@ section{
 }
 
 
-/* -------------------- Footer section starts -------------------- */
+
+
+
+
+
+
+
+/* ================================== css for about us ================================== */
+
+.about{
+    background: #fff;
+}
+
+.about .heading-1{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    text-transform: uppercase;
+    padding: 7rem 0;
+}
+
+.about .heading-1 span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .box-container .left-col{
+    flex: 1 1 25rem;
+}
+
+.about .box-container .left-col img{
+    width: 90%;
+}
+
+.about .box-container .right-col{
+    flex:  1 1 50rem;
+}
+
+.about .box-container .right-col .heading-2{
+    font-size: 4rem;
+    color: var(--red);
+    margin-bottom: 3.5rem;
+}
+
+.about .box-container .right-col .box{
+    padding: 1.5rem;
+}
+
+.about .box-container .right-col .box h2{
+    color: #333;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+
+.about .box-container .right-col .box p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #808080;
+
+}
+
+
+/* ==================================== Footer section starts ==================================== */
 .footer{
     background: #fff;
     margin-top: 3rem;
@@ -485,73 +553,11 @@ section{
 }
 
 
-/* -------------------- Footer section ends -------------------- */
+/*==================================== Footer section ends ==================================== */
 
 
 
-
-/* ================================== css for about us ================================== */
-
-.about{
-    background: #fff;
-}
-
-.about .heading-1{
-    text-align: center;
-    font-size: 4rem;
-    color: #333;
-    text-transform: uppercase;
-    padding: 7rem 0;
-}
-
-.about .heading-1 span{
-    color: var(--green);
-    text-transform: uppercase;
-}
-
-.about .box-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about .box-container .left-col{
-    flex: 1 1 25rem;
-}
-
-.about .box-container .left-col img{
-    width: 90%;
-}
-
-.about .box-container .right-col{
-    flex:  1 1 50rem;
-}
-
-.about .box-container .right-col .heading-2{
-    font-size: 4rem;
-    color: var(--red);
-    margin-bottom: 3.5rem;
-}
-
-.about .box-container .right-col .box{
-    padding: 1.5rem;
-}
-
-.about .box-container .right-col .box h2{
-    color: #333;
-    font-size: 2rem;
-    text-transform: capitalize;
-    padding-bottom: 1rem;
-}
-
-.about .box-container .right-col .box p{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: #808080;
-
-}
-
-
-/* -------------------- Services section starts -------------------- */
+/* ==================================== Services section starts ==================================== */
 
 .services .content{
     text-align: center;
@@ -603,12 +609,12 @@ section{
     color: #808080;
     line-height: 2rem;
 }
-/* -------------------- Services section ends -------------------- */
+/* ==================================== Services section ends ==================================== */
 
 
 
 
-/* -------------------- team section starts -------------------- */
+/* ==================================== team section starts ==================================== */
 
 .team{
     background: #fff;
@@ -663,21 +669,455 @@ section{
     font-size: 1.7rem;
     color: var(--blue);
 }
-/* -------------------- team section ends -------------------- */
+/* ==================================== team section ends ==================================== */
+
+
+
+
+/* ==================================== CSS SHOP PAGE ==================================== */
+
+.shop-product{
+    padding-top: 5rem;
+}
+
+.box-container .left-col{
+    margin-right: 2rem;
+}
+
+
+.box-container .left-col .box{
+    padding-top: 1rem;
+}
+
+.box-container .left-col .left-col-1 .check{
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+
+}
+
+.box-container .left-col .left-col-1 .check i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.box-container .left-col .left-col-1 .check a{
+    font: 1.3em;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #808080;
+}
+
+.box-container .left-col .left-col-1 .check a:hover{
+    color: var(--orange);
+    letter-spacing: 1px;
+}
+
+.box-container .left-col .col-2,
+.box-container .left-col .col-3{
+    margin-top: 3rem;
+}
+
+.box-container .left-col .col-3 .image{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.box-container .left-col .col-3 .image img{
+    width: 7rem;
+    margin-right: 1rem;
+}
+
+.box-container .left-col .col-3 .image .content h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.box-container .left-col .col-3 .image .content h3:hover{
+    color: #000;
+}
+
+.box-container .left-col .col-3 .image .content p{
+    color: var(--red);
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+
+.box-container .left-col .col-3 .image .content p span{
+    color: #808080;
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    margin-right: .5rem;
+}
+
+
+.box-container .right-col .right-col-1{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-container .right-col .right-col-1 .icons i{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border: .2rem solid rgba(0, 0, 0, .1);
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.box-container .right-col .right-col-1 .icons i:nth-child(1){
+    color: var(--orange);
+    margin-right: 1rem;
+}
+
+
+.box-container .right-col .right-col-1 .select select{
+    height: 4rem;
+    border: .1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.box-container .right-col .right-col-1 .select select option{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.box-container .right-col .right-col-3 .products{
+    padding: 0;
+}
+
+.box-container .right-col .right-col-3 .products .box-container .box{
+    flex: 1 1 22rem;
+}
+
+.box-container .right-col .right-col-3 .products .box-container .box img{
+    width: 18rem;
+}
+
+.box-container .right-col .next-page{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container .right-col .next-page .page{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--green);
+    background: #fff;
+}
+
+.box-container .right-col .next-page .page:nth-child(1){
+    color: #fff;
+    background: var(--background);
+}
+
+
+.footer .box-container{
+    padding-top: 2rem;
+}
+
+
+
+/* ==================================== css for blog page ==================================== */
+
+.blog .box-container{
+    display: grid;
+    grid-template-columns: 2.5fr 1.2fr;
+    gap: 2rem;
+}
+
+
+.blog .box-container .b-left-col .box{
+    background: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 2rem 0;
+}
+
+
+.blog .box-container .b-left-col .box img{
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    border-radius: .5rem;  
+}
+
+.blog .box-container .b-left-col .box .content{
+    padding: 2rem;
+}
+
+
+.blog .box-container .b-left-col .box .content h2{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.blog .box-container .b-left-col .box .content a{
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+    color: #808080;
+}
+
+.blog .box-container .b-left-col .box .content a i{
+    margin-right: .5rem;
+}
+
+
+.blog .box-container .b-left-col .box .content p{
+    padding: 5rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    line-height: 1.7rem;
+    text-transform: none;
+}
+
+.blog .box-container .b-left-col .box .content .btn{
+    font-size: 1.3rem;
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.blog .box-container .b-left-col .box .content .btn i{
+    margin-left: 1rem;
+}
+
+.blog .box-container .b-left-col .box .content .btn:hover{
+    color: var(--orange);
+}
+
+.blog .box-container .b-left-col .next-page{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog .box-container .b-left-col .next-page .page{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border:  .1rem solid rgb(0, 0, 0, .1);
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--green);
+    background: #fff;
+}
+
+.blog .box-container .b-left-col .next-page .page:nth-child(3){
+    width: 6rem;
+}
+
+.blog .box-container .b-left-col .next-page .page:nth-child(1){
+    color: #fff;
+    background: var(--background);
+}
+
+
+/* ..................................... b right-col starts.............................. */
+.box-container .b-right-col .box{
+    margin: 2rem;
+}
+
+.box-container .b-right-col .box .search-box{
+    display: flex;
+    width: 30rem;
+    height: 4rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+}
+
+.box-container .b-right-col .box .search-box #b-search-box{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: #333;
+    font-style: italic;
+    background: none;
+    text-transform: none;
+    border-radius: 0.5rem;
+}
+
+.box-container .b-right-col .box .search-box label{
+    width: 8rem;
+    height: 100%;
+    line-height: 4rem;
+    text-align: center;
+    background: var(--background--btn);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.box-container .b-right-col .b-r-1{
+    margin-top: 5rem;
+    background: #fff;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: .5rem;
+}
+
+.box-container .b-right-col .b-r-1 .title{
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.box-container .b-right-col .b-r-1 .content{
+    padding: 1.5rem 0;
+}
+
+.box-container .b-right-col .b-r-1 .content a{
+    display: block;
+    padding: .8rem 0;
+    font-size: 1.3rem;
+    color: #808080;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    margin: .8rem 0;
+}
+
+.box-container .b-right-col .b-r-1 .content a i{
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+
+.box-container .b-right-col .b-r-1 .content a:last-child{
+    border:none;
+}
+
+.box-container .b-right-col .b-r-2,
+.box-container .b-right-col .b-r-2, .title{
+    padding-bottom: 1rem;
+}
+
+
+.box-container .b-right-col .b-r-2 .box .tags a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: .5rem;
+    margin: 2rem;
+    background: #ccc;
+
+}
+
+
+/* ==================================== css for contact page ==================================== */
+.contact{
+    background: #eff7fa;
+}
+
+.contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .box-container .left{
+    flex-basis: 40%;
+}
+
+.contact .box-container .right{
+    flex-basis: 52%;
+}
+
+.contact .box-container .right .box{
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.contact .box-container .right .box iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .box-container .left h1{
+    padding-bottom: 4rem;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.contact .box-container .left .box a{
+    font-size: 1.8rem;
+    color: #444;
+    font-weight: bold;
+}
+
+.contact .box-container .left .box a i{
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+.contact .box-container .left .box p{
+    font-size: 1.3rem;
+    color: #808080;
+    padding: 1rem 0;
+}
+
+.contact .box-container .left .box a:hover{
+    color: var(--green);
+    transition: .3s linear;
+}
+
+.contact .box-container .left .box .link{
+    display: flex;
+    align-items: center;
+}
+
+.contact .box-container .left .box .link{
+    font-size: 1.5rem;
+    color: #444;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.contact .box-container .left .box .link a i{
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .box-container .left .box .link a i:hover{
+    background: var(--teal);
+    color: #fff;
+    font-size: 1.7rem;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+/* ==================================== end css for contact page ================================ */
 
 
 /* ==================================== media jquery ==================================== */
@@ -690,7 +1130,7 @@ section{
 
 }
 
-/* -------------------- media for max - 991px -------------------- */
+/* ==================================== media for max - 991px ==================================== */
 
 @media (max-width: 991px){
     .header-1,
@@ -746,7 +1186,7 @@ section{
 
 
 
-/* -------------------- media for max - 768px -------------------- */
+/* ==================================== media for max - 768px ==================================== */
 
 @media (max-width: 768px){
 
@@ -770,7 +1210,7 @@ section{
    }
 }
 
-/* -------------------- media for max - 450px -------------------- */
+/* ==================================== media for max - 450px ==================================== */
 
 @media (max-width: 450px){
 
