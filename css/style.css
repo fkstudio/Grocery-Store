@@ -1112,12 +1112,59 @@ section{
     font-size: 1.7rem;
 }
 
+/* ==================================== end css for contact page ================================== */
 
 
 
+/* ==================================== contact form section starts ================================ */
+
+#contact{
+    background: #fff;
+}
+
+.contact .heading{
+    font-size: 3.5rem;
+    color: #333;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox{
+   display: flex; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.contact form .inputBox input, .contact form textarea{
+    padding: 1rem;
+    font-size: 1.7rem;
+    background: #f7f7f7;
+    text-transform: none;
+    margin: 1rem 0;
+    border: 1rem rgb(0, 0, 0, .3);
+    width: 49%;
+}
 
 
-/* ==================================== end css for contact page ================================ */
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+    width: 100%;
+}
+
+
+.contact form .btn{
+    background: var(--teal);
+    color: #fff;
+    padding: .8rem 3rem;
+    cursor: pointer;
+}
+
+
+/* ==================================== contact form section ends ================================ */
+
+
 
 
 /* ==================================== media jquery ==================================== */
